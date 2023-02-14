@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+// talk to the store and access dispatch methods
 import { useSelector, useDispatch } from 'react-redux';
 import {
   decrement,
@@ -16,6 +17,8 @@ export function Counter() {
   const [incrementAmount, setIncrementAmount] = useState('2');
 
   const incrementValue = Number(incrementAmount) || 0;
+
+
 
   return (
     <div>
